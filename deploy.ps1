@@ -1,0 +1,1 @@
+aws s3 sync . s3://actividad1-ricardo-03024612 --exclude ".git/*" --exclude "deploy.ps1" --exclude "policy.json"
