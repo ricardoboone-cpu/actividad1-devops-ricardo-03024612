@@ -57,6 +57,22 @@ header p {
     background: #6890f0; /* azul Squirtle */
 }
 
+.eevee {
+    background: #c6a26b;
+}
+
+.pidgey {
+    background: #a89070;
+}
+
+.nidoran {
+    background: #a040a0;
+}
+
+.growlithe {
+    background: #ee8130;
+}
+
 /* Footer */
 footer {
     background-color: #3b4cca;
