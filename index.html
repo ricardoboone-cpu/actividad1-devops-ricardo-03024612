@@ -12,21 +12,33 @@
 
     <main>
         <section class="cards">
-            <div class="pokemon-card pikachu">
+            <div class="pokemon-card pikachu" onclick="mostrarEvolucion('pikachu')">
                 <h2>Pikachu ⚡</h2>
                 <p>Tipo: Eléctrico</p>
+                <div id="pikachu-evo" class="evolucion oculto">
+                    <p>Raichu ⚡</p>
+                </div>
             </div>
-            <div class="pokemon-card charizard">
-                <h2>Charizard 🔥</h2>
-                <p>Tipo: Fuego/Volador</p>
+            <div class="pokemon-card charmander" onclick="mostrarEvolucion('charmander')">
+                <h2>Charmander 🔥</h2>
+                <p>Tipo: Fuego</p>
+                <div id="charmander-evo" class="evolucion oculto">
+                    <p>Charmeleon → Charizard 🔥</p>
+                </div>
             </div>
-            <div class="pokemon-card bulbasaur">
+            <div class="pokemon-card bulbasaur" onclick="mostrarEvolucion('bulbasaur')">
                 <h2>Bulbasaur 🌱</h2>
                 <p>Tipo: Planta/Veneno</p>
+                <div id="bulbasaur-evo" class="evolucion oculto">
+                    <p>Ivysaur → Venusaur 🌿</p>
+                </div>
             </div>
-            <div class="pokemon-card squirtle">
+            <div class="pokemon-card squirtle" onclick="mostrarEvolucion('squirtle')">
                 <h2>Squirtle 💧</h2>
                 <p>Tipo: Agua</p>
+                <div id="squirtle-evo" class="evolucion oculto">
+                    <p>Wartortle → Blastoise 💧</p>
+                </div>
             </div>
         </section>
 
@@ -39,5 +51,16 @@
     <footer>
         <p>Actividad 1 DevOps - Ricardo Boone</p>
     </footer>
+    <script>
+    function mostrarEvolucion(pokemon) {
+        const evo = document.getElementById(pokemon + "-evo");
+
+        if (evo.classList.contains("oculto")) {
+            evo.classList.remove("oculto");
+        } else {
+            evo.classList.add("oculto");
+        }
+    }
+    </script>
 </body>
 </html>
